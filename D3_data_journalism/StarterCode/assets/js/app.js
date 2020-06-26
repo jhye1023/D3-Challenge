@@ -112,29 +112,6 @@ function renderXText(textGroup, newXScale, chosenXAxis) {
   return textGroup;
 }
 
-// function update(circlesGroup, chosenXAxis, chosenYAxis) {
-//   if (chosenXAxis === "poverty") {
-//     var labelX = "Poverty(%): "
-//   }
-//   else if (chosenXAxis === "age") {
-//     var labelX = "Age: "
-//   }
-//   else if (chosenXAxis === "income") {
-//     var labelX = "Income: "
-//   }
-
-//   if (chosenYAxis === "healthcare") {
-//     var labelY = "Healthcare(%): "
-//   }
-//   else if (chosenYAxis === "smokes") {
-//     var labelY = "Smokes(%): "
-//   }
-//   else if (chosenYAxis === "obesity") {
-//     var labelY = "Obese(%): "
-//   }
-
-//   return circlesGroup
-// };
 
 // retrieve data from the csv file an execute below, need .then for promise
 d3.csv("assets/data/data.csv").then(function(healthRiskData, err) {  
