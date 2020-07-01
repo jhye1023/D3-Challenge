@@ -99,7 +99,7 @@ function renderYText(textGroup, newYScale, chosenYAxis) {
 
   textGroup.transition()
     .duration(1000)
-    .attr("cy", d => newYScale(d[chosenYAxis]));
+    .attr("y", d => newYScale(d[chosenYAxis]));
 
   return textGroup;
 }
@@ -107,7 +107,7 @@ function renderXText(textGroup, newXScale, chosenXAxis) {
 
   textGroup.transition()
     .duration(1000)
-    .attr("cx", d => newXScale(d[chosenXAxis]));
+    .attr("x", d => newXScale(d[chosenXAxis]));
 
   return textGroup;
 }
